@@ -3,6 +3,12 @@ object Main extends App {
 
     def printPrompt(): Unit = print("sudachi 🍊 > ")
 
+    def printHelp(): Unit = {
+        println("[help]")
+        println("\texit:")
+        println("\t\texit sudachi-profile-cli")
+    }
+
     Iterator.continually {
         printPrompt()
         scala.io.StdIn.readLine()
@@ -10,6 +16,7 @@ object Main extends App {
         case "exit" =>
             println("bye ﾉｼ ")
             System.exit(0)
+        case "help" => printHelp()
         case x => println(x)
     }
 }
