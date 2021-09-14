@@ -7,7 +7,7 @@ ThisBuild / organizationName := "example"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "cw-sudachi-cli",
+    name := "sudachi-profile-cli-scala",
     libraryDependencies += scalaTest % Test
   )
 
