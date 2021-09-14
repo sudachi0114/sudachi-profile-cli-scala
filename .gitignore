@@ -1,0 +1,7 @@
+# IntelliJ?
+/.bsp
+/.idea
+target/
+
+# temporary-file
+/tmp
